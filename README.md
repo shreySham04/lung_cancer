@@ -1,2 +1,3 @@
-# lung_cancer
+# lung_cancer_detect
+
 Lung Cancer detecting model 
