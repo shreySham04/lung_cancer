@@ -1,4 +1,3 @@
-# Detect.py  — full working PyTorch training + Grad-CAM pipeline
 import os
 from pathlib import Path
 import numpy as np
@@ -106,8 +105,7 @@ else:
 
     torch.save(model.state_dict(), str(MODEL_PATH))
     print("Saved model to", MODEL_PATH)
-
-# ---------------- GRAD-CAM HELPER ----------------
+# GRAD-CAM HELPER 
 # target conv layer: last conv of resnet layer4
 target_layer = model.layer4[-1].conv2
 
@@ -285,3 +283,4 @@ all_labels = np.array(all_labels)
 print("Accuracy:", accuracy_score(all_labels, all_preds))
 print("\nClassification Report:\n", classification_report(all_labels, all_preds, target_names=classes))
 print("Confusion Matrix:\n", confusion_matrix(all_labels, all_preds))
+
