@@ -1,0 +1,35 @@
+PyCharmMiscProject/
+│
+├── Detect.py                      # Main training + inference + Grad-CAM script
+├── lung_model.pth                 # Saved trained X-ray model
+│
+├── lung_cancer_data/
+│   └── train/
+│       ├── cancer/                # Training X-ray images (cancer)
+│       │   ├── img1.jpg
+│       │   ├── img2.jpg
+│       │   └── ...
+│       └── normal/                # Training X-ray images (normal)
+│           ├── img1.jpg
+│           ├── img2.jpg
+│           └── ...
+│
+├── test_images/                   # Test X-ray images (used for Grad-CAM + inference)
+│   ├── test_cancer/               # Cancer test X-rays
+│   │   ├── test1.jpg
+│   │   └── ...
+│   └── test_normal/               # Normal test X-rays
+│       ├── test1.jpg
+│       └── ...
+│
+├── gradcam_outputs/               # Auto-created output folder
+│   ├── cancer/                    # Grad-CAM side-by-side outputs (Cancer predictions)
+│   │   ├── CANCER_98.5_img.jpg
+│   │   └── ...
+│   └── normal/                    # Original images (Normal predictions)
+│       ├── NORMAL_99.2_img.jpg
+│       └── ...
+│
+└── (optional)
+    ├── requirements.txt           # Dependencies
+    └── README.md                  # Project description (for GitHub / paper)
