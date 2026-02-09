@@ -1,3 +1,6 @@
+THE FOLDER STRUCTURE FOR THE FILES used in the project
+
+
 PyCharmMiscProject/
 │
 ├── Detect.py                      # Main training + inference + Grad-CAM script
@@ -33,3 +36,5 @@ PyCharmMiscProject/
 └── (optional)
     ├── requirements.txt           # Dependencies
     └── README.md                  # Project description (for GitHub / paper)
+
+
